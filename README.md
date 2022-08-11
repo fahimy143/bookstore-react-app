@@ -53,4 +53,4 @@ Give a ⭐️ to if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://github.com/fahimy143/bookstroe-react-app/commit/e79e7fc3284ffb97d07f785679eca78a7a07bba5) licensed.
+This project is [MIT](https://github.com/fahimy143/bookstroe-react-app/blob/Dev/LICENSE.md) licensed.
