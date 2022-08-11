@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => (
   <nav className="navbar">
     <h1> BookStore CMS </h1>
     <div className="links">
-      <a href="/">Books</a>
-      <a href="/Category">Categories</a>
+      <Link to="/">Books</Link>
+      <Link to="/Category">Categories</Link>
     </div>
   </nav>
 );
