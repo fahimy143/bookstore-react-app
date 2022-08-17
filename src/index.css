@@ -51,7 +51,7 @@ button {
   border-radius: 2px;
 }
 
-.form {
+.forms {
   display: flex;
   flex-direction: row;
   margin: 2rem;
