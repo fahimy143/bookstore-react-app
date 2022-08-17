@@ -8,17 +8,11 @@ const Form = () => {
   const title = useRef(null);
   const author = useRef(null);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    dispatch(addBook(title.current.value, author.current.value, uniqid()));
-    e.target.reset();
-  };
-
   return (
-    <form className="forms" onSubmit={handleSubmit}>
+    <form className="forms">
       <input ref={title} type="text" name="author" placeholder="Author" required />
       <input ref={author} type="text" name="book" placeholder="Book" required />
-      <button type="submit">Add</button>
+      <button type="button" onClick={() => dispatch(addBook(title.current.value, author.current.value, uniqid()))}>Add</button>
     </form>
   );
 };

@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Math Magicians live demo]()
+[Coming soon!]()
 
 ## Author
 
