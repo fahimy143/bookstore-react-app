@@ -6,7 +6,7 @@ const ADD_BOOK = 'bookstore-react-app/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore-react-app/books/REMOVE_BOOK';
 const LOAD_BOOKS = 'bookstore-react-app/books/LOAD_BOOKS';
 
-const appId = '6QokoJSAh5dHBW2fXVma';
+const appId = 'wkX5Bv9pHLpGLiFaAgpo';
 const baseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps';
 
 export const loadBooksThunk = createAsyncThunk(LOAD_BOOKS, async () => {
