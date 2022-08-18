@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import Progressbar from 'react-js-progressbar';
 import { loadBooksThunk, removeBookThunk } from '../redux/books/books';
+import './style/cards.css';
 
 const Book = () => {
   const dispatch = useDispatch();
@@ -16,10 +18,9 @@ const Book = () => {
   return (bookList.map((book) => (
     <div key={book.id} className="card">
       <div className="title">
-        <span>Action</span>
+        <span className="action">{book.category}</span>
         <h1>{book.title}</h1>
-        <p>{book.author}</p>
-        <p>{book.category}</p>
+        <h4>{book.author}</h4>
         <ul>
           <button type="button">Comments</button>
           <button type="button" id={book.id} onClick={handle}>Remove</button>
@@ -28,11 +29,21 @@ const Book = () => {
       </div>
 
       <div className="progress">
-        <h4>80%</h4>
+        <div className="progressbar">
+          <Progressbar
+            input={70}
+            pathWidth={5}
+            pathColor="#0290ff"
+            trailWidth={5}
+            trailColor="#e4e4e4"
+            textStyle={{ fill: '#0290ff' }}
+          />
+        </div>
+        <div className="completed">Completed</div>
       </div>
       <div className="chapter">
-        <h4>Current Chapter</h4>
-        <h5>Chapter 10</h5>
+        <h4>CURRENT CHAPTER</h4>
+        <h5>Chapter 17</h5>
         <button type="button">UPDATE PROGRESS</button>
       </div>
     </div>
